@@ -60,6 +60,7 @@ INSERT INTO movies (title, year, show_time) VALUES ('Avengers: Age of Ultron', 2
 INSERT INTO movies (title, year, show_time) VALUES ('Ant-Man', 2015, '13:50');
 INSERT INTO movies (title, year, show_time) VALUES ('Captain America: Civil War', 2016, '21:30');
 INSERT INTO movies (title, year, show_time) VALUES ('Doctor Strange', 2016, '17:55');
+INSERT INTO movies (title, year, show_time) VALUES ('Guardian of the Galaxy 2', 2018, '00.00');
 
 INSERT INTO attendances (person_id, movie_id) VALUES (2, 13);
 INSERT INTO attendances (person_id, movie_id) VALUES (22, 7);
@@ -163,3 +164,6 @@ SELECT name FROM people;
 UPDATE people SET name = 'Jeff 4' WHERE name = 'Andrew Smith';
 UPDATE people SET name = 'Jeff 5' WHERE name = 'Andrew Laughlin';
 SELECT name FROM people;
+SELECT * FROM movies;
+UPDATE movies SET show_time = '21:30' WHERE show_time = '18:55';
+SELECT * FROM movies;
