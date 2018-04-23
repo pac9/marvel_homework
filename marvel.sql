@@ -43,6 +43,7 @@ INSERT INTO people (name) VALUES ('Colin Tindle');
 INSERT INTO people (name) VALUES ('Rachel Westwater');
 INSERT INTO people (name) VALUES ('Andrew Smith');
 INSERT INTO people (name) VALUES ('Zsolt Podoba-Szalai');
+INSERT INTO people (name) VALUES ('John Harper');
 
 INSERT INTO movies (title, year, show_time) VALUES ('Iron Man', 2008, '19:55');
 INSERT INTO movies (title, year, show_time) VALUES ('The Incredible Hulk', 2008, '18:40');
@@ -149,3 +150,11 @@ INSERT INTO attendances (person_id, movie_id) VALUES (12, 2);
 INSERT INTO attendances (person_id, movie_id) VALUES (5, 8);
 INSERT INTO attendances (person_id, movie_id) VALUES (1, 1);
 INSERT INTO attendances (person_id, movie_id) VALUES (21, 4);
+
+SELECT * FROM movies;
+UPDATE people SET name = 'Davina Sanders' WHERE name = 'Davinda Sanders';
+SELECT name FROM people;
+SELECT * FROM people WHERE name = 'Pauline Cairns';
+DELETE FROM movies WHERE title = 'Batman Begins';
+SELECT * FROM movies;
+SELECT name FROM people;
