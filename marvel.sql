@@ -158,3 +158,8 @@ SELECT * FROM people WHERE name = 'Pauline Cairns';
 DELETE FROM movies WHERE title = 'Batman Begins';
 SELECT * FROM movies;
 SELECT name FROM people;
+DELETE FROM people WHERE name = 'Zsolt Podoba-Szalai';
+SELECT name FROM people;
+UPDATE people SET name = 'Jeff 4' WHERE name = 'Andrew Smith';
+UPDATE people SET name = 'Jeff 5' WHERE name = 'Andrew Laughlin';
+SELECT name FROM people;
